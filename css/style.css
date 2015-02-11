@@ -1,0 +1,52 @@
+a.tIcons {
+  display: block;
+  width: 1.5em;
+  height: 1.25em;
+  position: relative;
+}
+a.tIcons svg {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+a.tIcons svg:first-child {
+  transform-origin: 50% 50%;
+  transition: 0.18s ease-in;
+}
+a.tIcons svg:last-child {
+  transform-origin: 50% 50%;
+  transition: 0.18s ease-in;
+  transform: scale(0);
+}
+a.tIcons.toggle svg:first-child {
+  transform: scale(0);
+}
+a.tIcons.toggle svg:last-child {
+  transform: scale(1);
+}
+a.tIcons.trotate svg:last-child {
+  transform: scale(0) rotate(0deg);
+}
+a.tIcons.trotate.toggle svg:last-child {
+  transform: scale(1) rotate(180deg);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-size: 24px;
+}
+
+a {
+  margin-bottom: 4em;
+}
+a:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,63 @@
+@mixin transition
+  transition: 0.18s ease-in
+@mixin tOrigin
+  transform-origin: 50% 50%
+@mixin tScale0
+  transform: scale(0)
+@mixin tScale1
+  transform: scale(1)
+
+  
+// Basic Setup
+a.tIcons
+  display: block
+  width: 1.5em
+  height: 1.25em
+  position: relative
+  svg
+    width: 100%
+    display: block
+    position: absolute
+    &:first-child
+      @include tOrigin
+      @include transition
+    &:last-child
+      @include tOrigin
+      @include transition 
+      @include tScale0
+    
+  &.toggle
+    svg
+      &:first-child
+        @include tScale0
+      &:last-child
+        @include tScale1
+  
+        
+  &.trotate
+    svg
+      &:last-child
+        transform: scale(0) rotate(0deg)
+    &.toggle
+      svg
+        &:last-child
+          transform: scale(1) rotate(180deg)
+      
+        
+        
+// Not Needed
+html,
+body
+  height: 100%
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-flow: column nowrap
+  font-size: 24px
+  
+a
+  margin-bottom: 4em
+  &:last-of-type
+    margin-bottom: 0
