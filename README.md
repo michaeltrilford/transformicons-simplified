@@ -6,7 +6,7 @@ I'm looking for a less CSS heavy option than what is available at http://www.tra
 
 ## HTML Structure
 
-,,,
+```
   <a class="tIcons menu" href="#">
 
   <svg viewBox="0 0 36 30">
@@ -34,4 +34,4 @@ I'm looking for a less CSS heavy option than what is available at http://www.tra
   </svg>
 
 </a>
-,,,
+```
