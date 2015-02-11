@@ -6,7 +6,7 @@ I'm looking for a less CSS heavy option than what is available at http://www.tra
 
 ## HTML Structure
 
-### Animation: Scale
+### Animation Default: Scale
 
 ```
 <a class="tIcons menu" href="#">
@@ -15,7 +15,7 @@ I'm looking for a less CSS heavy option than what is available at http://www.tra
 </a>
 ```
 
-### Animation: Scale & Rotate
+### Animation Enhance: Scale & Rotate
 
 ```
 <a class="tIcons trotate menu" href="#">
