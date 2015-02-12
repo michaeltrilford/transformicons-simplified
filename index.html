@@ -39,10 +39,10 @@ a.tIcons.toggle svg:first-child {
 a.tIcons.toggle svg:last-child {
   transform: scale(1);
 }
-a.tIcons.trotate svg:last-child {
+a.tIcons.tRotate svg:last-child {
   transform: scale(0) rotate(0deg);
 }
-a.tIcons.trotate.toggle svg:last-child {
+a.tIcons.tRotate.toggle svg:last-child {
   transform: scale(1) rotate(-360deg);
 }
 
@@ -52,18 +52,23 @@ body {
 }
 
 body {
+  padding: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-a {
-  margin-bottom: 4em;
+section {
+  display: flex;
+  padding-bottom: 6em;
 }
-a:last-of-type {
-  margin-bottom: 0;
+section a:first-child {
+  margin-right: 0.75em;
+}
+section a:last-child {
+  margin-left: 0.75em;
 }
 
 </style>
@@ -74,7 +79,8 @@ a:last-of-type {
 
 <body>
 
-  <a class="tIcons menu" href="#">
+  <section>
+<a class="tIcons" href="#">
   <!-- Menu Icon -->
   <svg viewBox="0 0 36 30">
     <rect width="36" height="6"/>
@@ -85,10 +91,8 @@ a:last-of-type {
   <svg viewBox="0 0 36 30">
     <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
   </svg>
-
 </a>
-
-<a class="tIcons trotate menu" href="#">
+<a class="tIcons tRotate" href="#">
   <!-- Menu Icon -->
   <svg viewBox="0 0 36 30">
     <rect width="36" height="6"/>
@@ -99,22 +103,136 @@ a:last-of-type {
   <svg viewBox="0 0 36 30">
     <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
   </svg>
-
 </a>
+</section>
 
-<a class="tIcons trotate menu" href="#">
-  <!-- Menu Icon -->
-  <svg viewBox="0 0 36 30">
-    <rect width="36" height="6"/>
-    <rect y="24" width="36" height="6"/>
-    <rect y="12" width="36" height="6"/>
-  </svg>
-  <!-- Arrow Icon -->
-  <svg viewBox="0 0 36 30">
-    <path d="M36,12H10.2l7.6-7.6l-4.2-4.2L1.1,12.6C1.2,12.6,1,12.7,1,12.8l-0.1,0.1l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.4,0.4C0.2,13.8,0,14.4,0,15c0,0.6,0.2,1.1,0.5,1.6c0.1,0.2,0.3,0.4,0.4,0.5l0,0c0,0,0.1,0.1,0.1,0.1l0.1,0.1 l12.5,12.5l4.2-4.2L10.2,18H36V12z"/>
-  </svg>
+<section>
+  <a class="tIcons" href="#">
+    <!-- Menu Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect width="36" height="6"/>
+      <rect y="24" width="36" height="6"/>
+      <rect y="12" width="36" height="6"/>
+    </svg>
+    <!-- Arrow Icon -->
+    <svg viewBox="0 0 36 30">
+      <path d="M36,12H10.2l7.6-7.6l-4.2-4.2L1.1,12.6C1.2,12.6,1,12.7,1,12.8l-0.1,0.1l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.4,0.4C0.2,13.8,0,14.4,0,15c0,0.6,0.2,1.1,0.5,1.6c0.1,0.2,0.3,0.4,0.4,0.5l0,0c0,0,0.1,0.1,0.1,0.1l0.1,0.1 l12.5,12.5l4.2-4.2L10.2,18H36V12z"/>
+    </svg>
+  </a>
+  <a class="tIcons tRotate" href="#">
+    <!-- Menu Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect width="36" height="6"/>
+      <rect y="24" width="36" height="6"/>
+      <rect y="12" width="36" height="6"/>
+    </svg>
+    <!-- Arrow Icon -->
+    <svg viewBox="0 0 36 30">
+      <path d="M36,12H10.2l7.6-7.6l-4.2-4.2L1.1,12.6C1.2,12.6,1,12.7,1,12.8l-0.1,0.1l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.4,0.4C0.2,13.8,0,14.4,0,15c0,0.6,0.2,1.1,0.5,1.6c0.1,0.2,0.3,0.4,0.4,0.5l0,0c0,0,0.1,0.1,0.1,0.1l0.1,0.1 l12.5,12.5l4.2-4.2L10.2,18H36V12z"/>
+    </svg>
+  </a>
+</section>
 
-</a>
+<section>
+  <a class="tIcons" href="#">
+    <!-- Gallery Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" width="8" height="8"/>
+      <rect x="14" width="8" height="8"/>
+      <rect x="25" width="8" height="8"/>
+      <rect x="3" y="11" width="8" height="8"/>
+      <rect x="14" y="11" width="8" height="8"/>
+      <rect x="25" y="11" width="8" height="8"/>
+      <rect x="3" y="22" width="8" height="8"/>
+      <rect x="14" y="22" width="8" height="8"/>
+      <rect x="25" y="22" width="8" height="8"/>
+    </svg>
+    <!-- Close Icon -->
+    <svg viewBox="0 0 36 30">
+      <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+  </a>
+  <a class="tIcons tRotate" href="#">
+    <!-- Gallery Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" width="8" height="8"/>
+      <rect x="14" width="8" height="8"/>
+      <rect x="25" width="8" height="8"/>
+      <rect x="3" y="11" width="8" height="8"/>
+      <rect x="14" y="11" width="8" height="8"/>
+      <rect x="25" y="11" width="8" height="8"/>
+      <rect x="3" y="22" width="8" height="8"/>
+      <rect x="14" y="22" width="8" height="8"/>
+      <rect x="25" y="22" width="8" height="8"/>
+    </svg>
+    <!-- Close Icon -->
+    <svg viewBox="0 0 36 30">
+      <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+  </a>
+</section>
+
+<section>
+  <a class="tIcons" href="#">
+    <!-- Gallery Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" width="8" height="8"/>
+      <rect x="14" width="8" height="8"/>
+      <rect x="25" width="8" height="8"/>
+      <rect x="3" y="11" width="8" height="8"/>
+      <rect x="14" y="11" width="8" height="8"/>
+      <rect x="25" y="11" width="8" height="8"/>
+      <rect x="3" y="22" width="8" height="8"/>
+      <rect x="14" y="22" width="8" height="8"/>
+      <rect x="25" y="22" width="8" height="8"/>
+    </svg>
+    <!-- Arrow Icon -->
+    <svg viewBox="0 0 36 30">
+      <path d="M36,12H10.2l7.6-7.6l-4.2-4.2L1.1,12.6C1.2,12.6,1,12.7,1,12.8l-0.1,0.1l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.4,0.4C0.2,13.8,0,14.4,0,15c0,0.6,0.2,1.1,0.5,1.6c0.1,0.2,0.3,0.4,0.4,0.5l0,0c0,0,0.1,0.1,0.1,0.1l0.1,0.1 l12.5,12.5l4.2-4.2L10.2,18H36V12z"/>
+    </svg>
+  </a>
+  <a class="tIcons tRotate" href="#">
+    <!-- Gallery Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" width="8" height="8"/>
+      <rect x="14" width="8" height="8"/>
+      <rect x="25" width="8" height="8"/>
+      <rect x="3" y="11" width="8" height="8"/>
+      <rect x="14" y="11" width="8" height="8"/>
+      <rect x="25" y="11" width="8" height="8"/>
+      <rect x="3" y="22" width="8" height="8"/>
+      <rect x="14" y="22" width="8" height="8"/>
+      <rect x="25" y="22" width="8" height="8"/>
+    </svg>
+    <!-- Arrow Icon -->
+    <svg viewBox="0 0 36 30">
+      <path d="M36,12H10.2l7.6-7.6l-4.2-4.2L1.1,12.6C1.2,12.6,1,12.7,1,12.8l-0.1,0.1l0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.4,0.4C0.2,13.8,0,14.4,0,15c0,0.6,0.2,1.1,0.5,1.6c0.1,0.2,0.3,0.4,0.4,0.5l0,0c0,0,0.1,0.1,0.1,0.1l0.1,0.1 l12.5,12.5l4.2-4.2L10.2,18H36V12z"/>
+    </svg>
+  </a>
+</section>
+
+<section>
+  <a class="tIcons" href="#">
+    <!-- Show Icon -->
+    <svg viewBox="0 0 36 30">
+      <polygon points="33,12 21,12 21,0 15,0 15,12 3,12 3,18 15,18 15,30 21,30 21,18 33,18 "/>
+    </svg>
+    <!-- Hide Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" y="12" width="30" height="6"/>
+    </svg>
+  </a>
+  <a class="tIcons tRotate" href="#">
+    <!-- Show Icon -->
+    <svg viewBox="0 0 36 30">
+      <polygon points="33,12 21,12 21,0 15,0 15,12 3,12 3,18 15,18 15,30 21,30 21,18 33,18 "/>
+    </svg>
+    <!-- Hide Icon -->
+    <svg viewBox="0 0 36 30">
+      <rect x="3" y="12" width="30" height="6"/>
+    </svg>
+  </a>
+</section>
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
