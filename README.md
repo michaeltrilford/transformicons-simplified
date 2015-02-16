@@ -2,6 +2,8 @@
 
 A Pen created at CodePen.io. You can find this one at http://codepen.io/trilm/pen/LEejop.
 
+I have a personal crusade to use CSS in the most lightweight way possible. This was my attempt to create icons that transform on interaction.
+
 ## HTML Structure
 
 ### Animation Default: Scale
